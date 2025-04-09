@@ -19,7 +19,7 @@ mongoose.connect(process.env.MONGO_URI, {
     .catch(err => console.log(err));
 
 app.get('/', (req, res) => {
-    res.send('Forum API is running');
+    res.send(`le serveur est en marche sur le port ${PORT}`);
 });
 
 app.listen(PORT, () => {

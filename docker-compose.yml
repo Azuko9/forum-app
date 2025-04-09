@@ -2,7 +2,7 @@
 
 services:
   backend:
-    build: ./backend
+    image: azukosan/forum-app-backend:latest
     ports:
       - "5000:5000"
     volumes:
@@ -15,7 +15,7 @@ services:
       - mongo
 
   frontend:
-    build: ./frontend
+    image: azukosan/forum-app-frontend:latest
     ports:
       - "3000:3000"
     volumes:
